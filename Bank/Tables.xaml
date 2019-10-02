@@ -1,0 +1,63 @@
+﻿<Window x:Class="Bank.Tables"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bank"
+         Title="Tables" Height="720" Width="1080"
+        Closed="Window_Closed">
+    <Grid>
+        <TabControl >
+            <TabItem Header="Таблица Специалистов">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGSpec"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Аккаунты" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGAccounts" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Банковские операции" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGBankOperation" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Клиенты" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGClients" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Таблица ролей" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGRole" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Специальности" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGSpecial" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Время работы" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGTimeWorl" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Посещения" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGVisit" />
+                    <Button HorizontalAlignment="Left" Margin="942,600,0,0" VerticalAlignment="Top" Width="75">
+                        <Button Content="Button" Width="75" Click="Button_Click_1"/>
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Банковские выписки" Margin="-2,-2,73,0">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DGBankOut" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
